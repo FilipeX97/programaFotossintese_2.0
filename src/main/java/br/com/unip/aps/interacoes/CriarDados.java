@@ -52,7 +52,7 @@ public class CriarDados {
 					"6 - Vegetal");
 			
 			validacaoScanner = sc.nextLine();
-			if(validacaoScanner.matches("[0-9]*")) {
+			if(validacaoScanner.matches("[0-9]*") && !validacaoScanner.equals("")) {
 				escolhaCriarDadosPlanta = Integer.parseInt(validacaoScanner);
 			}else {
 				escolhaCriarDadosPlanta = 9;

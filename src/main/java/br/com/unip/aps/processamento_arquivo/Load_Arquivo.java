@@ -12,10 +12,12 @@ import br.com.unip.aps.modelo.planta.Planta;
 public class Load_Arquivo {
 	
 	private static final Logger logger = Logger.getLogger(Load_Arquivo.class);
-	private GerarLista_Saves gerarLista = new GerarLista_Saves();
-	private List<ArquivoSave> listaSave = gerarLista.geraListaSaves();
+	private GerarLista_Saves gerarLista;
 	
 	public Pessoa loadArquivoPessoa(int numeroSave) {
+		
+		gerarLista = new GerarLista_Saves();
+		List<ArquivoSave> listaSave = gerarLista.geraListaSaves();
 		
 		Pessoa pessoa = new Pessoa(listaSave.get(numeroSave).getNomePessoa());
 		logger.debug("Save da classe pessoa carregado");
@@ -24,6 +26,9 @@ public class Load_Arquivo {
 	}
 	
 	public Planta loadArquivoPlanta(int numeroSave) {
+		
+		gerarLista = new GerarLista_Saves();
+		List<ArquivoSave> listaSave = gerarLista.geraListaSaves();
 		
 		CriarPlanta criarPlanta = new CriarPlanta(listaSave.get(numeroSave).getGrupoPlanta());
 		

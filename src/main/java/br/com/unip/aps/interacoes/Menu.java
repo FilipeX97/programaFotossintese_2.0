@@ -61,7 +61,7 @@ public class Menu {
 						+ "\nEscolha: ");
 				
 				validacaoEscolha = sc.nextLine();
-				if(validacaoEscolha.matches("[0-9]*")) {
+				if(validacaoEscolha.matches("[0-9]*") && !validacaoEscolha.equals("")) {
 					escolhaMenu = Integer.parseInt(validacaoEscolha);
 				}else {
 					escolhaMenu = 9;

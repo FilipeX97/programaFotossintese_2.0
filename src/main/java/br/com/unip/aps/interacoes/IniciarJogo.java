@@ -29,7 +29,7 @@ public class IniciarJogo {
 			System.out.println("0 - Fechar Jogo");
 		
 			validacaoScanner = sc.nextLine();
-			if(validacaoScanner.matches("[0-9]*")) {
+			if(validacaoScanner.matches("[0-9]*") && !validacaoScanner.equals("")) {
 				escolhaIniciar = Integer.parseInt(validacaoScanner);
 			}else {
 				escolhaIniciar = 9;

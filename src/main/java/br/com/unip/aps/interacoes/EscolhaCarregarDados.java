@@ -20,14 +20,17 @@ public class EscolhaCarregarDados {
 	private static final Logger logger = Logger.getLogger(EscolhaCarregarDados.class);
 	private Properties paths = PathProperties.getPathProperties();
 	private Path path = Paths.get(paths.getProperty("pathArquivo"));
-	private GerarLista_Saves gerarLista = new GerarLista_Saves();
-	private List<ArquivoSave> listaSave = gerarLista.geraListaSaves();
+	private GerarLista_Saves gerarLista;
 	ValidaEscolhaAcoes escolha;
 	String validacaoEscolha;
 	
 	public int escolhaCarregarDados() {
 		
-		if(Files.exists(path)) {
+		if(Files.exists(path) == true) {
+			
+			gerarLista  = new GerarLista_Saves();
+			List<ArquivoSave> listaSave = gerarLista.geraListaSaves();
+			
 			do {
 				for(int i = 0; i < listaSave.size(); i++) {
 					System.out.println(
@@ -44,7 +47,7 @@ public class EscolhaCarregarDados {
 				
 				int decisao;
 				validacaoEscolha = sc.nextLine();
-				if(validacaoEscolha.matches("[0-9]*")) {
+				if(validacaoEscolha.matches("[0-9]*") && !validacaoEscolha.equals("")) {
 					decisao = Integer.parseInt(validacaoEscolha);
 				}else {
 					decisao = listaSave.size()+2;
