@@ -27,5 +27,7 @@ Com as novas implementações o código ficou mais curto, sendo assim facilitou 
 ### LOG
 
 Implementando o log, no mesmo diretório em que conterá o save. O log ajudará a entender o que o usuário fez, ou seja suas ações, implementações...
+
 Com log podemos perceber onde ocorreu o erro também.
+
 Foi utilizado o log4j com sua versão sendo a 1.2.17.
