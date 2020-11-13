@@ -1,12 +1,10 @@
 # programaFotossintese_2.0
 
-Programa refeito utilizando funcionalidades do Java 7 e Java 8, como por exemplo nio, foreach...
-
-## Programa atualizado utilizando funcionalidades novas
+## Programa atualizado, utilizando funcionalidades novas...
 
 ### NIO e Properties
 
-Utilizando nio ao invés de io, facilitando interativade com o arquivo, diminuindo código. Utilizando lista, o nio pode gerar vários saves, a quantidade é quantos saves quiserem. Utilizei properties para definir o diretório do arquivo. No arquivo cada save é em uma linha, e cada dado é separado por um ";", para que seja separado no programa e inserindo no objeto.
+Utilizando nio ao invés de io, facilitando interativade com o arquivo e diminuindo código. Utilizando lista, o nio pode gerar vários saves, a quantidade é quantos saves quiserem. Utilizei properties para definir o diretório do arquivo. No arquivo cada save é em uma linha, e cada dado é separado por um ";", para que seja separado no programa e inserindo no objeto.
 
 ### Foreach
 
@@ -26,7 +24,7 @@ Com as novas implementações o código ficou mais curto, sendo assim facilitou 
 
 ### LOG
 
-Implementando o log, no mesmo diretório em que conterá o save. O log ajudará a entender o que o usuário fez, ou seja suas ações, implementações...
+Implementando o log, no mesmo diretório em que conterá o save. O log ajudará a entender o que o usuário fez, ou seja suas ações...
 
 Com log podemos perceber onde ocorreu o erro também.
 
